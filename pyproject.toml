@@ -1,0 +1,16 @@
+[project]
+name = "selfedit"
+version = "0.1.0"
+description = "SELF-EDIT M3: one model proposes a bounded repair to its own weights."
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.2",
+  "transformers>=4.44",
+]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["selfedit*"]
